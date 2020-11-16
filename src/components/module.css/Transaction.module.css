@@ -1,0 +1,31 @@
+.container{
+    width: 440px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.column{
+    background-color: rgb(0, 188, 212);
+    font-size: 13px;
+    font-family: "HelveticaNeueCyr";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+}
+
+.columName{
+    text-align: center;
+
+}
+
+.tableItem{
+    text-align: center;
+    font-size: 15px;
+    font-family: "HelveticaNeueCyr";
+    color: rgb(92, 105, 117);
+    font-weight: lighter;
+    padding: 6px 0 6px 0;
+    background-color: rgba(92, 105, 117, 0.301);
+
+}
