@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './module.css/Transaction.module.css';
+import s from './Transaction.module.css';
 
 export default function TransactionHistory({ children }) {
   return (
-    <table className={styles.container}>
+    <table className={s.container}>
       <thead>
         <tr>
-          <th className={styles.column}>Type</th>
-          <th className={styles.column}>Amount</th>
-          <th className={styles.column}>Currency</th>
+          <th className={s.column}>Type</th>
+          <th className={s.column}>Amount</th>
+          <th className={s.column}>Currency</th>
         </tr>
       </thead>
 

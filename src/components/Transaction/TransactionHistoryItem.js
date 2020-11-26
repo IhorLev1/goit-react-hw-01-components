@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes, { string, number, arrayOf } from 'prop-types';
-import styles from './module.css/Transaction.module.css';
+import s from './Transaction.module.css';
 
 export default function TransactionHistory({ items }) {
   return items.map(item => (
     <tr key={item.id}>
-      <td className={styles.tableItem}>{item.type}</td>
-      <td className={styles.tableItem}>{item.amount}</td>
-      <td className={styles.tableItem}>{item.currency}</td>
+      <td className={s.tableItem}>{item.type}</td>
+      <td className={s.tableItem}>{item.amount}</td>
+      <td className={s.tableItem}>{item.currency}</td>
     </tr>
   ));
 }

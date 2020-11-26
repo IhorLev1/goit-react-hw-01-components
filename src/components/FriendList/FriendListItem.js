@@ -1,25 +1,24 @@
 import React from 'react';
 import PropTypes, { string, bool, number } from 'prop-types';
-import styles from './module.css/FriendList.module.css';
+import s from './FriendList.module.css';
 
 function FriendList({ friends }) {
+  const { avatar, name, isOnline } = friends;
   return friends.map(friend => (
-    <li key={friend.id} className={styles.friendListItem}>
+    <li key={friend.id} className={s.friendListItem}>
       <span
         className={
-          (styles.friendOnlineStatus = friend.isOnline
-            ? styles.isOnline
-            : styles.isOffline)
+          (s.friendOnlineStatus = isOnline ? s.isOnline : s.isOffline)
         }
-        isOnline={friend.isOnline}
+        isOnline={isOnline}
       ></span>
       <img
-        className={styles.friendImg}
-        src={friend.avatar}
-        alt={friend.name}
+        className={s.friendImg}
+        src={avatar}
+        alt={name}
         width="48"
       />
-      <p className={styles.friendName}>{friend.name}</p>
+      <p className={s.friendName}>{friend.name}</p>
     </li>
   ));
 }
